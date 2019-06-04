@@ -130,6 +130,7 @@ img {
           flex-direction: column;
   font-size: 13px;
   font-weight: 400;
+  outline: none;
 }
 
 .navbar__button:hover {
@@ -326,6 +327,7 @@ img {
 .offer__input {
   margin-bottom: 30px;
   width: 240px;
+  outline: none;
 }
 
 .offer__input:first-child {
@@ -337,6 +339,7 @@ img {
   min-height: 70px;
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
+  outline: none;
 }
 
 .offer__button:hover {
@@ -434,5 +437,33 @@ img {
   position: absolute;
   top: 0;
   right: 0;
+}
+
+.up {
+  position: fixed;
+  bottom: 50px;
+  right: 100px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid grey;
+  z-index: 100;
+  outline: none;
+}
+
+.up:after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  position: absolute;
+  top: 4px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 /*# sourceMappingURL=style.css.map */
