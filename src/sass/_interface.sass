@@ -14,15 +14,22 @@ img
   .container
     max-width: 580px
     width: 90%
+  .section
+    padding-top: 60px
+    padding-bottom: 60px
 @media (max-width: 576px)
   .container
     max-width: 320px
     width: 90%
+
 .button
   border-radius: 10px
   background-color: $main-color
   border: none
   padding: 18px 30px
+  &:hover
+    background-color: lighten($main-color, 10%)
+    cursor: pointer
 .section
   padding: 90px 0
   &-title
@@ -42,3 +49,5 @@ img
   &__left, &__right
     &:hover
       cursor: pointer
+.invalid
+  border: 1px solid red
