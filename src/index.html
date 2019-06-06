@@ -81,8 +81,8 @@
                   бесплатного дизайн-проекта!</span>
                 <!-- /.section-subtitle -->
                 <form action="#" class="form offer__form" id="offer-form">
-                  <input type="text" name="username" class="input offer__input" placeholder="Ваше имя">
-                  <input type="text" name="phone"  class="input offer__input phone" placeholder="Ваш телефон">
+                  <input type="text" name="offername" class="input offer__input" placeholder="Ваше имя">
+                  <input type="text" name="offerphone"  class="input offer__input phone" placeholder="Ваш телефон">
                   <button class="button offer__button">Получить бесплатный дизайн-проект</button>
                   <div class="offer-basement">
                     <div class="offer__bs1">Наш менеджер перезвонит Вам
@@ -347,8 +347,33 @@
     // Инициализация WOW  
     new WOW().init();
     $(document).ready(function() {
-      $('#brif-form, #offer-form').validate({
+      $('#offer-form').validate({
         errorClass: "invalid",
+        errorElement: "div",
+        rules: {
+          offername: {
+            required: true,
+            minlength: 2,
+            maxlength: 15
+          },
+          offerphone: {
+            required: true
+          }
+        },
+        messages: {
+          offerphone: {
+            required: "Укажите телефон"
+          },
+          offername: {
+            required: "Укажите имя",
+            minlength: jQuery.validator.format("Осталось символов: {0}"),
+            maxlength: jQuery.validator.format("Превышен лимит символов")
+          }
+        }
+      });
+      $('#brif-form').validate({
+        errorClass: "invalid",
+        errorElement: "div",
         rules: {
           username: {
             required: true,
