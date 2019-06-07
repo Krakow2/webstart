@@ -15,6 +15,7 @@
   <noscript>
     <div><img src="https://mc.yandex.ru/watch/53973313" style="position:absolute; left:-9999px;" alt="" /></div>
   </noscript> <!-- /Yandex.Metrika counter -->
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=<dcd68b0d-5a04-48bf-a074-ad5a19489002>&lang=ru_RU" type="text/javascript"></script>
 </head>
 <body>
   <div class="navbar">
@@ -334,8 +335,7 @@
   
   <footer class="footer">
     <div class="map" id="map">
-      <script type="text/javascript" charset="utf-8" async
-        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A4611f7a871b9f11c2bc2a47ac9110d877e6911f7153e020bd34a0d9104c65c7f&amp;width=100%25&amp;height=640&amp;lang=ru_RU&amp;scroll=false"></script>
+
     </div>
     <div class="container">
       <div class="contacts-block">
@@ -347,7 +347,7 @@
                 <img src="img/footer/map-placeholder.png" alt=""></span>
                  <!-- /.contacts-list__icon -->
                  <span class="contacts-list__text">г. Москва <br>
-                <span class="btext">ул. Ленинга, д. 10, корпус 2, оф. 308</span></span> 
+                <span class="btext">ул. Ленинга, д. 10, <br> корпус 2, оф. 308</span></span> 
                  <!-- /.contacts-list__text -->
             </li>
               <!-- /.contacts-list__item -->
@@ -399,6 +399,23 @@
   <script src="js/wow.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/jquery.maskedinput.min.js"></script>
+  <script type="text/javascript">
+    ymaps.ready(init);
+
+      function init() {
+        var map = new ymaps.Map("map", {
+          center: [55.6114, 37.2011],
+          zoom: 10,
+          behaviors: ['drag']
+        });
+
+        var placemark = new ymaps.Placemark([55.6114, 37.2011], 
+
+        );
+
+        map.geoObjects.add(placemark);
+      }
+  </script>
   <script>
     // Инициализация WOW  
     new WOW().init();
