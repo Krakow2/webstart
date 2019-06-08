@@ -1,35 +1,51 @@
 .footer
-  display: flex
   position: relative
 .map
-  width: 87%
-  height: 640px
+  position: absolute
+  width: 50%
+  height: 100%
 .contacts
   flex-basis: 50%
-  padding-left: 200px
+  padding-top: 90px
+  padding-left: 800px
   &__title
+    width: 300px
+    padding: 0
+    margin: 0
     +bold
     font-size: 22px
-    line-height: 1.4
-    margin-bottom: 100px
+    line-height: 1.5
+    margin-bottom: 94px
   &-block
     display: flex
   &-list
     padding: 0
     list-style: none
+    &__text
+      line-height: 1.4
     &__icon
       width: 20px
       height: 20px
       text-align: center
       line-height: 20px
-      margin-right: 23px
+      margin-right: 19px
     &__item
       display: flex
       align-items: flex-start
       margin-bottom: 39px
 .btext
   font-weight: bold
+@media (max-width: 1200px)
+  .contacts
+    padding-left: 539px
+  .map
+
 @media (max-width: 768px)
+  .map
+    top
+    bottom: 0
+    width: 100%
+    height: 50%
   .container
     margin: 0
   .footer
@@ -37,16 +53,14 @@
     flex-direction: column
     height: 1122px
   .contacts
+    margin-left: 22px
+    margin-top: 67px
     padding-top: 0
     flex-basis: 100%
     height: 457px
-  .map
-    padding-top: 482px
-    width: 100%
-  .contacts
+    padding: 0
     &__title
-      width: 240px
+      width: 245px
       height: 61px
       font-size: 18px
       font-weight: 400
-

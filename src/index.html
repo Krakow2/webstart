@@ -15,8 +15,9 @@
   <noscript>
     <div><img src="https://mc.yandex.ru/watch/53973313" style="position:absolute; left:-9999px;" alt="" /></div>
   </noscript> <!-- /Yandex.Metrika counter -->
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=<dcd68b0d-5a04-48bf-a074-ad5a19489002>&lang=ru_RU" type="text/javascript"></script>
+  <script src="https://api-maps.yandex.ru/2.1?apikey=b071d8d2-b42a-43ae-a6cd-efacd789775d&lang=ru_RU" type="text/javascript"></script>
 </head>
+
 <body>
   <div class="navbar">
     <div class="container">
@@ -29,11 +30,12 @@
             <span class="navbar__address">Калуга, Москва, МО</span>
             <a href="tel:+7(495)42-251-31" class="navbar__phone">+7 (495) 42-251-31</a>
           </div>
-            <button class="button navbar__button" onclick="ym(53973313, 'reachGoal', 'button'); return true;" id="button">Перезвоните мне</button>
+            <button class="button navbar__button" onclick="ym(53973313, 'reachGoal', 'button'); return true;" id="button"><b>Перезвоните мне</b></button>
         </div>
       </div>
     </div>
   </div>
+
   <main>
     <section class="hero">
       <div class="container">
@@ -77,6 +79,7 @@
       <!-- /.container -->
     </section>
     <!-- /.hero -->
+
           <section class="offer section">
             <div class="container">
               <div class="offer-block">
@@ -94,7 +97,7 @@
                   <div class="offer-basement">
                     <div class="offer__bs1">Наш менеджер перезвонит Вам
                       в течение 60 секунд</div>
-                    <div class="offer__bs2">или перезвоните нам сами <br> <span class="offer__tel">+7 (495) 42-251-31</span></div>
+                    <div class="offer__bs2">или перезвоните нам сами <br> <span class="offer__tel"><a href="tel:+7(495)42-251-31">+7 (495) 42-251-31</a></span></div>
                   </div>
               </div>
           
@@ -285,6 +288,11 @@
     </section>
     <!-- /.section steps -->
 
+    <section class="section mid">
+      <span class="mid__title">Ремонт обойдется Вам дешевле, так как <br>
+      мы используем качественные материалы по оптовым ценам</span> 
+  </section>
+
     <section class="section brif">
       <div class="container">
         <div class="brif-block">
@@ -334,13 +342,11 @@
   </main>
   
   <footer class="footer">
-    <div class="map" id="map">
-
-    </div>
+    <div class="map" id="map"></div>
     <div class="container">
       <div class="contacts-block">
         <div class="contacts">
-          <h3 class="contacts__title">Приезжайте к нам в гости! Проконсультируем Вас по всем вопросам ремонта</h3>
+          <h3 class="contacts__title">Приезжайте к нам в гости! Проконсультируем Вас <br> по  всем вопросам ремонта</h3>
             <ul class="contacts-list">
               <li class="contacts-list__item">
                 <span class="contacts-list__icon">
@@ -400,6 +406,7 @@
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/jquery.maskedinput.min.js"></script>
   <script type="text/javascript">
+
     ymaps.ready(init);
 
       function init() {
