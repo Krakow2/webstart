@@ -24,16 +24,21 @@
     border-radius: 50%
     margin-bottom: 30px
   &__text
+    line-height: 1.4
     font-size: 14px
     max-width: 160px
     margin: auto
   &s
     &__title
       margin: auto
-      margin-bottom: 59px
+      margin-bottom: 53px
+      line-height: 1.4
+      font-size: 30px
+      max-width: 700px
     &__subtitle
       text-align: center
-      margin-bottom: 58px
+      margin-bottom: 68px
+      font-size: 20px
     &-block
       display: flex
 @media (max-width: 1200px)
@@ -50,6 +55,8 @@
     margin-bottom: 30px
     &:after
       display: none
+    &__text
+      +bold
     &s
       &-block
         flex-direction: column
