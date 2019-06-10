@@ -6,6 +6,7 @@ src: url('../fonts/MuseoSansCyrl/MuseoSansCyrl-300.eot?#iefix') format('embedded
   url('../fonts/MuseoSansCyrl/MuseoSansCyrl-300.ttf') format('truetype');
 font-weight: normal;
 font-style: normal;
+font-display: auto;
 }
 @font-face {
 font-family: 'Museo Sans Bold';
@@ -15,6 +16,7 @@ src: url('../fonts/MuseoSansCyrl/MuseoSansCyrl-700.eot?#iefix') format('embedded
   url('../fonts/MuseoSansCyrl/MuseoSansCyrl-700.ttf') format('truetype');
 font-weight: normal;
 font-style: normal;
+font-display: auto;
 }
 
 @mixin reg {
