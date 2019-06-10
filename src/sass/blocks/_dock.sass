@@ -1,8 +1,36 @@
 .dock
-  display: flex
-  &-title
+  &-blocks
+    display: flex
+    justify-content: space-around
+    margin-top: 110px
+  &-block
+    width: 300px
+    height: 500px
+    align-items: center
+    flex-direction: column
+    display: flex
+  &__title
+    margin: auto
     text-align: center
     font-size: 30px
     +bold
-    width: 642px
+    width: 653px
     height: 74px
+    line-height: 1.5
+    margin-top: 28px
+.block
+  &__description
+      font-size: 18px
+      font-weight: 400
+      line-height: 24px
+      text-align: center
+      padding-top: 32px
+@media (max-width: 1200px)
+  .dock
+    &-block
+      padding-right: 28px
+@media (max-width: 768px)
+  .dock
+    &-blocks
+      align-items: center
+      flex-direction: column

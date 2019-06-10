@@ -43,6 +43,7 @@ img {
   .container {
     max-width: 580px;
     width: 90%;
+    margin-top: 0;
   }
   .section {
     padding-top: 60px;
@@ -1038,6 +1039,8 @@ a {
 }
 
 .contacts {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1048,7 +1051,7 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-right: 100px;
+  padding-left: 200px;
 }
 
 .contacts__title {
@@ -1057,10 +1060,11 @@ a {
   margin: 0;
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
-  font-size: 20px;
-  line-height: 1.5;
-  margin-bottom: 94px;
-  margin-top: 78px;
+  font-size: 21px;
+  line-height: 1.6;
+  margin-bottom: 71px;
+  margin-top: 92px;
+  padding-left: 10px;
 }
 
 .contacts-block {
@@ -1078,7 +1082,7 @@ a {
 }
 
 .contacts-list__text {
-  line-height: 1.4;
+  line-height: 1.6;
 }
 
 .contacts-list__icon {
@@ -1086,7 +1090,18 @@ a {
   height: 20px;
   text-align: center;
   line-height: 20px;
-  margin-right: 19px;
+  margin-right: 22px;
+  margin-left: 7px;
+  margin-top: 10px;
+}
+
+.contacts-list__icon1 {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  margin-right: 20px;
+  margin-left: 7px;
 }
 
 .contacts-list__item {
@@ -1103,17 +1118,14 @@ a {
   font-weight: bold;
 }
 
-@media (max-width: 1200px) {
-  .contacts {
-    padding-left: 539px;
-  }
-}
-
 @media (max-width: 768px) {
   .map {
     bottom: 0;
     width: 100%;
     height: 50%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
   .footer {
     display: -webkit-box;
@@ -1126,11 +1138,7 @@ a {
     height: 1122px;
   }
   .contacts {
-    margin-left: 22px;
-    margin-top: 67px;
-    padding-top: 0;
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
+    width: 100%;
     height: 457px;
     padding: 0;
   }
@@ -1139,6 +1147,11 @@ a {
     height: 61px;
     font-size: 18px;
     font-weight: 400;
+  }
+  .contacts-block {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -1230,18 +1243,90 @@ a {
   margin-right: 30px;
 }
 
-.dock {
+@media (max-width: 1200px) {
+  .help {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media (max-width: 768px) {
+  .help {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .help-block {
+    margin-bottom: 80px;
+  }
+  .help-block2 {
+    margin-bottom: 80px;
+  }
+}
+
+.dock-blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 110px;
+}
+
+.dock-block {
+  width: 300px;
+  height: 500px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.dock-title {
+.dock__title {
+  margin: auto;
   text-align: center;
   font-size: 30px;
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
-  width: 642px;
+  width: 653px;
   height: 74px;
+  line-height: 1.5;
+  margin-top: 28px;
+}
+
+.block__description {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  padding-top: 32px;
+}
+
+@media (max-width: 1200px) {
+  .dock-block {
+    padding-right: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .dock-blocks {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 /*# sourceMappingURL=style.css.map */
