@@ -6,16 +6,15 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Ремонт квартир</title>
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://api-maps.yandex.ru/2.1?apikey=b071d8d2-b42a-43ae-a6cd-efacd789775d&lang=ru_RU" type="text/javascript"></script>
+</head>
+<body>
   <!-- Yandex.Metrika counter -->
   <script
     type="text/javascript"> (function (m, e, t, r, i, k, a) { m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) }; m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a) })(window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym"); ym(53973313, "init", { clickmap: true, trackLinks: true, accurateTrackBounce: true, webvisor: true, trackHash: true }); </script>
   <noscript>
     <div><img src="https://mc.yandex.ru/watch/53973313" style="position:absolute; left:-9999px;" alt="" /></div>
   </noscript> <!-- /Yandex.Metrika counter -->
-  <script src="https://api-maps.yandex.ru/2.1?apikey=b071d8d2-b42a-43ae-a6cd-efacd789775d&lang=ru_RU" type="text/javascript"></script>
-</head>
-
-<body>
   <div class="navbar">
     <div class="container">
       <div class="navbar-block wow slideInDown">
@@ -87,7 +86,7 @@
                 <span class="section-subtitle offer__subtitle">Оставьте заявку на разработку
                   бесплатного дизайн-проекта!</span>
                 <!-- /.section-subtitle -->
-                <form action="#" class="form offer__form" id="offer-form">
+                <form action="#" class="form offer__form" id="offer-form"></form>
                   <input type="text" name="offername" class="input offer__input" placeholder="Ваше имя">
                   <input type="text" name="offerphone"  class="input offer__input phone" placeholder="Ваш телефон">
                   <button class="button offer__button" onclick="ym(53973313, 'reachGoal', 'form-button'); return true;">Получить бесплатный дизайн-проект</button>
@@ -98,7 +97,6 @@
                   </div>
               </div>
           
-              </form>
               <!-- /.form offer__form -->
               <!-- /.offer-block -->
             </div>
@@ -427,14 +425,12 @@
             </ul>
             <!-- /.contacts-list -->
           </div>
-          </ul>
           <!-- /.contacts-list -->
         </div>
         <!-- /.contacts -->
       </div>
       <!-- /.contacts-block -->
       </div>
-    </div>
   </footer>
 
   <div class="modal" id="modal">
@@ -559,7 +555,7 @@
     });
   </script>
 
-  <button a href="#" id="up" class="up"></button>
+  <button id="up" class="up"></button>
 
 </body>
 </html>
